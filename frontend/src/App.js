@@ -8,14 +8,14 @@ import ProductScreen from './screens/ProductScreen'
 const App = () => {
   return (
     <Router>
-      <Header></Header>
+      <Header />
       <main className='py-3'>
         <Container>
           <Route path='/' component={HomeScreen} exact />
           <Route path='/Product/:id' component={ProductScreen} />
         </Container>
       </main>
-      <Footer></Footer>
+      <Footer />
     </Router>
   )
 }
